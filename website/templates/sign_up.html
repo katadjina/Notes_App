@@ -1,51 +1,63 @@
 {% extends "base.html" %} {% block title %}Sign Up{% endblock %} 
+
+{# # content will be generated where corresponding block in base file is located #}
 {% block content %}
-    <div class="w-full max-w-xs">
-        <form method="POST" class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
-        <h3 align="center">Sign Up</h3>
-        <div class="form-group">
-            <label for="email">Email Address</label>
-            <input
-            type="email"
-            class="form-control"
-            id="email"
-            name="email"
-            placeholder="Enter email"
-            />
-        </div>
-        <div class="form-group">
-            <label for="firstName">First Name</label>
-            <input
-            type="text"
-            class="form-control"
-            id="firstName"
-            name="firstName"
-            placeholder="Enter first name"
-            />
-        </div>
-        <div class="form-group">
-            <label for="password1">Password</label>
-            <input
-            type="password"
-            class="form-control"
-            id="password1"
-            name="password1"
-            placeholder="Enter password"
-            />
-        </div>
-        <div class="form-group">
-            <label for="password2">Password (Confirm)</label>
-            <input
-            type="password"
-            class="form-control"
-            id="password2"
-            name="password2"
-            placeholder="Confirm password"
-            />
-        </div>
-        <br />
-        <button type="submit" class="btn btn-primary">Submit</button>
-        </form>
-    </div>
+<div class="flex flex-col items-center justify-center mt-20">
+    <form method="POST" class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 ml-20 mr-20 w-full lg:w-1/2">
+      <div class="flex justify-center items-center mb-8"> 
+        <h3 class="text-xl font-bold">Sign Up</h3>
+      </div>
+  
+      <div class="mb-4">
+        <label for="email" class="block text-gray-700 font-bold mb-2">Email Address</label>
+        <input
+          type="email"
+          class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+          id="email"
+          name="email"
+          placeholder="Enter email"
+        />
+      </div>
+  
+      <div class="mb-4">
+        <label for="firstName" class="block text-gray-700 font-bold mb-2">First Name</label>
+        <input
+          type="text"
+          class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+          id="firstName"
+          name="firstName"
+          placeholder="Enter first name"
+        />
+      </div>
+  
+      <div class="mb-4">
+        <label for="password1" class="block text-gray-700 font-bold mb-2">Password</label>
+        <input
+          type="password"
+          class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+          id="password1"
+          name="password1"
+          placeholder="Enter password"
+        />
+      </div>
+  
+      <div class="mb-6">
+        <label for="password2" class="block text-gray-700 font-bold mb-2">Confirm Password</label>
+        <input
+          type="password"
+          class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+          id="password2"
+          name="password2"
+          placeholder="Confirm password"
+        />
+      </div>
+  
+      <div class="flex justify-center">
+        <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
+          Sign Up
+        </button>
+      </div>
+    </form>
+  </div>
 {% endblock %}
     
