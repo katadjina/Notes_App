@@ -1,5 +1,5 @@
 from website import create_app
-#can be imported bc <<import>> is the websire package
+#can be imported bc <<import>> is the website package
 
 
 app = create_app()
